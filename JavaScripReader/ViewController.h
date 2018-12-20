@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *textViewWithJavaScript;
+@property (weak, nonatomic) IBOutlet UITextView *textViewWithResult;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldWithString;
+@property (weak, nonatomic) IBOutlet UIButton *javaScriptConvertButton;
+- (IBAction)javaScriptConvertButtonPressed:(id)sender;
 
 
 @end

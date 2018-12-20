@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,70 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-JE-nUk">
+                                <rect key="frame" x="30" y="50" width="315" height="173"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CHB-yV-tdr">
+                                <rect key="frame" x="30" y="364" width="315" height="273"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="273" id="NyE-KM-x53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-mD-M2X">
+                                <rect key="frame" x="30" y="304" width="315" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="javaScriptConvertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSE-0w-NHr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31x-9i-jb0">
+                                <rect key="frame" x="30" y="253" width="315" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZbR-JE-nUk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="9Dc-2y-3ZD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="31x-9i-jb0" secondAttribute="trailing" constant="30" id="EbX-Kf-noN"/>
+                            <constraint firstItem="CHB-yV-tdr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OAN-Gn-qIt"/>
+                            <constraint firstItem="31x-9i-jb0" firstAttribute="top" secondItem="ZbR-JE-nUk" secondAttribute="bottom" constant="30" id="P7x-bK-6EB"/>
+                            <constraint firstItem="31x-9i-jb0" firstAttribute="top" secondItem="ZbR-JE-nUk" secondAttribute="bottom" constant="30" id="SW3-JD-U5P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aXR-mD-M2X" secondAttribute="trailing" constant="30" id="SsF-fv-sd7"/>
+                            <constraint firstItem="aXR-mD-M2X" firstAttribute="top" secondItem="31x-9i-jb0" secondAttribute="bottom" constant="30" id="Wy5-F9-q95"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CHB-yV-tdr" secondAttribute="bottom" constant="30" id="Z5c-oa-lkV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CHB-yV-tdr" secondAttribute="trailing" constant="30" id="f34-FE-NAw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZbR-JE-nUk" secondAttribute="trailing" constant="30" id="kWH-mF-ncl"/>
+                            <constraint firstItem="31x-9i-jb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nP5-at-oDr"/>
+                            <constraint firstItem="CHB-yV-tdr" firstAttribute="top" secondItem="aXR-mD-M2X" secondAttribute="bottom" constant="30" id="ra6-jM-s38"/>
+                            <constraint firstItem="ZbR-JE-nUk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uFk-5g-VBM"/>
+                            <constraint firstItem="aXR-mD-M2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="v2d-nM-xvc"/>
+                            <constraint firstItem="CHB-yV-tdr" firstAttribute="top" secondItem="aXR-mD-M2X" secondAttribute="bottom" constant="30" id="ztZ-Br-UET"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="javaScriptConvertButton" destination="aXR-mD-M2X" id="fLh-Ue-Pmc"/>
+                        <outlet property="textFieldWithString" destination="31x-9i-jb0" id="kBo-v6-2m7"/>
+                        <outlet property="textViewWithJavaScript" destination="ZbR-JE-nUk" id="PeV-9X-cvb"/>
+                        <outlet property="textViewWithResult" destination="CHB-yV-tdr" id="Glw-dR-nkO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
