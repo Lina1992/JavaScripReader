@@ -18,13 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-JE-nUk">
-                                <rect key="frame" x="30" y="50" width="315" height="173"/>
+                                <rect key="frame" x="30" y="50" width="315" height="259"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="273" id="TXf-Dd-nWJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CHB-yV-tdr">
-                                <rect key="frame" x="30" y="364" width="315" height="273"/>
+                                <rect key="frame" x="30" y="450" width="315" height="187"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="273" id="NyE-KM-x53"/>
@@ -33,17 +36,21 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-mD-M2X">
-                                <rect key="frame" x="30" y="304" width="315" height="30"/>
+                                <rect key="frame" x="30" y="390" width="315" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="javaScriptConvertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSE-0w-NHr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31x-9i-jb0">
-                                <rect key="frame" x="30" y="253" width="315" height="21"/>
+                                <rect key="frame" x="30" y="339" width="315" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldWithStringDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="mVq-d1-ymr"/>
+                                    <action selector="textFieldWithStringDidEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="jCN-Ey-o70"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

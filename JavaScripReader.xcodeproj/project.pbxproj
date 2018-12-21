@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EE747CB21CCC9370016E780 /* UIView+moveIfTextUnderKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE747CA21CCC9370016E780 /* UIView+moveIfTextUnderKeyboard.m */; };
+		3EE747D121CCD7320016E780 /* CustomJSProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE747D021CCD7320016E780 /* CustomJSProgressView.m */; };
 		4BFA023721CC08FC0070FE15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA023621CC08FC0070FE15 /* AppDelegate.m */; };
 		4BFA023A21CC08FC0070FE15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFA023921CC08FC0070FE15 /* ViewController.m */; };
 		4BFA023D21CC08FC0070FE15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BFA023B21CC08FC0070FE15 /* Main.storyboard */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3EE747C921CCC9360016E780 /* UIView+moveIfTextUnderKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+moveIfTextUnderKeyboard.h"; sourceTree = "<group>"; };
+		3EE747CA21CCC9370016E780 /* UIView+moveIfTextUnderKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+moveIfTextUnderKeyboard.m"; sourceTree = "<group>"; };
+		3EE747CF21CCD7320016E780 /* CustomJSProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomJSProgressView.h; sourceTree = "<group>"; };
+		3EE747D021CCD7320016E780 /* CustomJSProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomJSProgressView.m; sourceTree = "<group>"; };
 		4BFA023221CC08FC0070FE15 /* JavaScripReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaScripReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFA023521CC08FC0070FE15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BFA023621CC08FC0070FE15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 				4BFA023921CC08FC0070FE15 /* ViewController.m */,
 				4BFA026721CC0CEE0070FE15 /* String+js.h */,
 				4BFA026821CC0CEE0070FE15 /* String+js.m */,
+				3EE747CF21CCD7320016E780 /* CustomJSProgressView.h */,
+				3EE747D021CCD7320016E780 /* CustomJSProgressView.m */,
+				3EE747C921CCC9360016E780 /* UIView+moveIfTextUnderKeyboard.h */,
+				3EE747CA21CCC9370016E780 /* UIView+moveIfTextUnderKeyboard.m */,
 				4BFA023B21CC08FC0070FE15 /* Main.storyboard */,
 				4BFA023E21CC08FD0070FE15 /* Assets.xcassets */,
 				4BFA024021CC08FD0070FE15 /* LaunchScreen.storyboard */,
@@ -270,7 +280,9 @@
 				4BFA023A21CC08FC0070FE15 /* ViewController.m in Sources */,
 				4BFA026921CC0CEE0070FE15 /* String+js.m in Sources */,
 				4BFA024521CC08FD0070FE15 /* main.m in Sources */,
+				3EE747CB21CCC9370016E780 /* UIView+moveIfTextUnderKeyboard.m in Sources */,
 				4BFA023721CC08FC0070FE15 /* AppDelegate.m in Sources */,
+				3EE747D121CCD7320016E780 /* CustomJSProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
